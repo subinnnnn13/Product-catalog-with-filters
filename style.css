@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #89f7fe, #66a6ff);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container, #catalog-page {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+}
+
+input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Catalog Page */
+.product-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  width: 110px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.product img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.qty-control button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.qty-control span {
+  margin: 0 8px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#total {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #333;
+  font-weight: bold;
+}
+
+.top-buttons {
+  margin-bottom: 15px;
+}
