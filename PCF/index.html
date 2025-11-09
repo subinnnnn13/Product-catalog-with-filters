@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Catalog with Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Login Page -->
+  <div id="login-page" class="container">
+    <h2>Login / Register</h2>
+    <input type="text" id="username" placeholder="Enter Username">
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="register()">Register</button>
+    <button onclick="login()">Login</button>
+    <p id="message"></p>
+  </div>
+
+  <!-- Catalog Page -->
+  <div id="catalog-page" class="hidden">
+    <h1>🛍️ Product Catalog</h1>
+
+    <div class="top-buttons">
+      <button id="orderBtn" onclick="placeOrder()">Place Order</button>
+      <button id="logoutBtn" onclick="logout()">Logout</button>
+    </div>
+
+    <div class="product-list">
+      <!-- Mobile -->
+      <div class="product">
+        <img src="images/Sky_Mobile_PDP1_iPhone15Pro_Black_Titanium-PreOrder.avif" alt="Mobile">
+        <h3>📱 Mobile Phone</h3>
+        <p>Price: ₹12,000</p>
+        <div class="qty-control">
+          <button onclick="changeQty('mobile', -1)">−</button>
+          <span id="mobileQty">0</span>
+          <button onclick="changeQty('mobile', 1)">+</button>
+        </div>
+      </div>
+
+      <!-- Dress -->
+      <div class="product">
+        <img src="images/t-shirt-7973404_1280.jpg" alt="Dress">
+        <h3>👗 Dress</h3>
+        <p>Price: ₹800</p>
+        <div class="qty-control">
+          <button onclick="changeQty('dress', -1)">−</button>
+          <span id="dressQty">0</span>
+          <button onclick="changeQty('dress', 1)">+</button>
+        </div>
+      </div>
+
+      <!-- Book -->
+      <div class="product">
+        <img src="images/R.jpeg" alt="Book">
+        <h3>📚 Book</h3>
+        <p>Price: ₹350</p>
+        <div class="qty-control">
+          <button onclick="changeQty('book', -1)">−</button>
+          <span id="bookQty">0</span>
+          <button onclick="changeQty('book', 1)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="total">Total: ₹0</h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
